@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">RoomBDCarnet</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="update">Modificar</string>
+    <string name="delete">Borrar</string>
+    <string name="add">Agregar</string>
+    <string name="alumnos">Gestionar alumnos</string>
+    <string name="materias">Gestionar materias</string>
+    <string name="notas">Gestionar notas</string>
+    <string name="carnet">Carnet</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="sexo">Sexo</string>
+    <string name="materias_ganadas">Materias Ganadas</string>
+    <string name="ingrese_carnet_del_alumno">Ingrese carnet del alumno...</string>
+    <string name="ingrese_el_nombre">Ingrese el nombre...</string>
+    <string name="ingrese_el_apellido">Ingrese el apellido...</string>
+    <string name="masculino">M</string>
+    <string name="femenino">F</string>
+    <string name="guardar_alumno">Guardar Alumno</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

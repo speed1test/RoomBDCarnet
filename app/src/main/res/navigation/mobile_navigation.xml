@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_alumnos">
+    <fragment
+        android:id="@+id/nav_alumnos"
+        android:name="com.example.roombdcarnet.ui.alumno.AlumnosFragment"
+        android:label="@string/alumnos"
+        tools:layout="@layout/alumnos_fragment" >
+        <action
+            android:id="@+id/action_nav_alumnos_to_nav_guardar_alumno"
+            app:destination="@id/nav_guardar_alumno" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_guardar_alumno"
+        android:name="com.example.roombdcarnet.ui.alumno.CreateAlumnoFragment"
+        android:label="@string/alumnos"
+        tools:layout="@layout/fragment_create_alumno" />
+</navigation>

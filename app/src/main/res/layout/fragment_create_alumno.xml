@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.alumno.CreateAlumnoFragment"
+    tools:ignore="ExtraText">
+    <TextView
+        android:id="@+id/carnet_label"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/carnet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/nombre_label"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+
+    android:layout_marginLeft="32dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/nombre"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/carnet_label" />
+    <TextView
+        android:id="@+id/apellido_label"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_label" />
+    <TextView
+        android:id="@+id/sexo_label"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/sexo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellido_label" />
+    <TextView
+        android:id="@+id/mat_ganadas_label"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/materias_ganadas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sexo_label" />
+    <EditText
+        android:id="@+id/carnet_input"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/ingrese_carnet_del_alumno"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/carnet_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre_input"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/ingrese_el_nombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/nombre_label"
+        app:layout_constraintTop_toBottomOf="@+id/carnet_input" />
+    <EditText
+        android:id="@+id/apellido_input"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/ingrese_el_apellido"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/apellido_label"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_input" />
+    <TextView
+        android:id="@+id/mat_ganadas_input"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/materias_ganadas"
+        app:layout_constraintStart_toEndOf="@+id/mat_ganadas_label"
+        app:layout_constraintTop_toBottomOf="@+id/sexo_radio_group" />
+    <RadioGroup
+        android:id="@+id/sexo_radio_group"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/sexo_label"
+        app:layout_constraintTop_toBottomOf="@+id/apellido_input">
+        <RadioButton
+            android:id="@+id/masculino_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+        android:text="@string/masculino"
+        app:layout_constraintStart_toEndOf="@+id/sexo_label"
+        app:layout_constraintTop_toBottomOf="@+id/apellido_input" />
+        <RadioButton
+            android:id="@+id/femenino_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="@string/femenino"
+            app:layout_constraintStart_toEndOf="@+id/masculino_radio"
+            app:layout_constraintTop_toBottomOf="@+id/apellido_input" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/guardar_alumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/guardar_alumno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mat_ganadas_input" />
+</androidx.constraintlayout.widget.ConstraintLayout>
